@@ -1,0 +1,166 @@
+{
+  "n_samples_input": 2000,
+  "n_samples_detected": 1724,
+  "n_samples_used": 1724,
+  "feature_dim": 912,
+  "classes": [
+    "Angry",
+    "Fear",
+    "Happy",
+    "Sad",
+    "Suprise"
+  ],
+  "landmarker_model": "models\\face_landmarker.task",
+  "node_optimization": {
+    "optimizer": "differential_evolution",
+    "offsets": [
+      0.25840368290296445,
+      0.3730968802485469,
+      -0.34858050561854326,
+      0.2248251747247596,
+      -0.3784927932811971,
+      0.156460097927678
+    ],
+    "offsets_named": {
+      "mouth_sx": 0.25840368290296445,
+      "mouth_sy": 0.3730968802485469,
+      "left_eye_sx": -0.34858050561854326,
+      "left_eye_sy": 0.2248251747247596,
+      "right_eye_sx": -0.3784927932811971,
+      "right_eye_sy": 0.156460097927678
+    },
+    "objective": -0.198692484815873,
+    "fisher_score": 0.198692484815873,
+    "history_tail": [
+      -0.17978384622334176,
+      -0.1881610298930059,
+      -0.1921604650796948,
+      -0.1921604650796948,
+      -0.19332969335207448,
+      -0.19536276973527741,
+      -0.1978340918484399,
+      -0.1978340918484399,
+      -0.198692484815873
+    ]
+  },
+  "training": {
+    "model": "RandomForestClassifier",
+    "accuracy": 0.5290023201856149
+  },
+  "mdistortion_ranges": {
+    "summary": {
+      "mouth": {
+        "n_pairs": 190,
+        "emotions": {
+          "Angry": {
+            "count": 343,
+            "global_min": 0.021791532635688782,
+            "global_max": 1.0,
+            "mean_of_means": 0.5210025310516357
+          },
+          "Fear": {
+            "count": 324,
+            "global_min": 0.02205316349864006,
+            "global_max": 1.0,
+            "mean_of_means": 0.517720103263855
+          },
+          "Happy": {
+            "count": 375,
+            "global_min": 0.010036855936050415,
+            "global_max": 1.0,
+            "mean_of_means": 0.5031228065490723
+          },
+          "Sad": {
+            "count": 317,
+            "global_min": 0.011796858161687851,
+            "global_max": 1.0,
+            "mean_of_means": 0.49159401655197144
+          },
+          "Suprise": {
+            "count": 365,
+            "global_min": 0.03762640058994293,
+            "global_max": 1.0,
+            "mean_of_means": 0.5655200481414795
+          }
+        }
+      },
+      "left_eye": {
+        "n_pairs": 120,
+        "emotions": {
+          "Angry": {
+            "count": 343,
+            "global_min": 0.006577714812010527,
+            "global_max": 1.0,
+            "mean_of_means": 0.5126635432243347
+          },
+          "Fear": {
+            "count": 324,
+            "global_min": 0.004476652480661869,
+            "global_max": 1.0,
+            "mean_of_means": 0.5241568088531494
+          },
+          "Happy": {
+            "count": 375,
+            "global_min": 0.012509895488619804,
+            "global_max": 1.0,
+            "mean_of_means": 0.49932900071144104
+          },
+          "Sad": {
+            "count": 317,
+            "global_min": 0.001126538380049169,
+            "global_max": 1.0,
+            "mean_of_means": 0.5006548762321472
+          },
+          "Suprise": {
+            "count": 365,
+            "global_min": 0.03397110849618912,
+            "global_max": 1.0,
+            "mean_of_means": 0.5784669518470764
+          }
+        }
+      },
+      "right_eye": {
+        "n_pairs": 120,
+        "emotions": {
+          "Angry": {
+            "count": 343,
+            "global_min": 0.008196051232516766,
+            "global_max": 1.0,
+            "mean_of_means": 0.5083112716674805
+          },
+          "Fear": {
+            "count": 324,
+            "global_min": 0.002383076585829258,
+            "global_max": 1.0,
+            "mean_of_means": 0.5160266757011414
+          },
+          "Happy": {
+            "count": 375,
+            "global_min": 0.009047084487974644,
+            "global_max": 1.0,
+            "mean_of_means": 0.49717646837234497
+          },
+          "Sad": {
+            "count": 317,
+            "global_min": 0.0028831970412284136,
+            "global_max": 1.0,
+            "mean_of_means": 0.4939408600330353
+          },
+          "Suprise": {
+            "count": 365,
+            "global_min": 0.03449062630534172,
+            "global_max": 1.0,
+            "mean_of_means": 0.5690857172012329
+          }
+        }
+      }
+    },
+    "range_band_accuracy_in_sample": 0.4240139211136891,
+    "saved": "artifacts\\emotion_tasks_ranges.json"
+  },
+  "saved": {
+    "model_weights": "artifacts\\emotion_tasks_model.joblib",
+    "report": "artifacts\\emotion_tasks_report.json",
+    "ranges": "artifacts\\emotion_tasks_ranges.json"
+  }
+}
