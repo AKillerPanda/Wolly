@@ -1,0 +1,12 @@
+# Core (both hardware and simulator)
+numpy>=1.24
+
+# --- Desktop simulator only (your PC / VS Code) ---
+# pip install pygame
+pygame>=2.5 ; platform_machine not in "aarch64 armv7l armv6l"
+
+# --- Raspberry Pi 5 hardware only ---
+# Prefer the apt packages for the GPIO stack (see README), but these also work:
+spidev>=3.6 ; platform_machine in "aarch64 armv7l armv6l"
+gpiozero>=2.0 ; platform_machine in "aarch64 armv7l armv6l"
+lgpio>=0.2 ; platform_machine in "aarch64 armv7l armv6l"

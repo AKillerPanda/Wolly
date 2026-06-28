@@ -1,0 +1,8 @@
+[console_scripts]
+affect-pi = affect_pi.main:main
+affect-pi-eval-emotion = affect_pi.eval_emotion_tasks:main
+affect-pi-eyes = robot_eyes.main:main
+affect-pi-live = affect_pi.live_tasks_demo:main
+affect-pi-train = affect_pi.train_mdistortion_de:main
+affect-pi-train-emotion = affect_pi.train_emotion_tasks:main
+affect-pi-train-yolo = affect_pi.train_yolo_face:main
